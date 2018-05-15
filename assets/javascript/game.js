@@ -38,17 +38,18 @@ if (playerChoice === computerChoice) {
 
 }
 
-else { losses++ & guessesLeft--}
+else {guessesLeft--}
 
-{document.getElementById("playerLosses").innerHTML = losses;}
 {document.getElementById("guessesLeft").innerHTML = guessesLeft;}
 
 
 if (guessesLeft === 0){
     alert("You Lose! Try Again!");
+    losses++;
     resetGame();
     document.getElementById("guessesLeft").innerHTML = guessesLeft;
     document.getElementById("guessesSoFar").innerHTML = null;
+    {document.getElementById("playerLosses").innerHTML = losses;}
     
 
 }
