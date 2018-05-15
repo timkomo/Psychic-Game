@@ -1,0 +1,15 @@
+body {
+    border: solid 10px lightblue;
+     margin:10px 100px;
+}
+
+.jumbotron {
+    background-color: lightgray;
+    text-align: center;
+    padding: 5px;
+}
+
+.lead {
+padding: 25px;
+}
+
