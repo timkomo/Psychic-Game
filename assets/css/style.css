@@ -1,15 +1,24 @@
 body {
-    border: solid 10px lightblue;
      margin:10px 100px;
+     background-image: url("https://media1.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .jumbotron {
     background-color: lightgray;
     text-align: center;
     padding: 5px;
+    border: solid 10px lightblue;
 }
 
 .lead {
 padding: 25px;
+}
+
+.list-group{
+    border: solid 10px lightblue;
 }
 
