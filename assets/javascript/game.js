@@ -5,6 +5,8 @@ var wins = 0;
 var losses = 0;
 var guessesLeft = 9;
 var guessesSoFar = [];
+var computerChoice = ('abcdefghijklmnopqrstuvwxyz').split('')[(Math.floor(Math.random() * 26 ))];
+
 
 document.onkeyup = function(event) { 
 
@@ -22,10 +24,12 @@ document.getElementById("guessesSoFar").innerHTML = guessesSoFar;
 function resetGame()
 {guessesLeft=9;
 guessesSoFar=[];
+computerChoice = ('abcdefghijklmnopqrstuvwxyz').split('')[(Math.floor(Math.random() * 26 ))];
+
 }
 
 
-var computerChoice = ('abcdefghijklmnopqrstuvwxyz').split('')[(Math.floor(Math.random() * 26 ))];
+// var computerChoice = ('abcdefghijklmnopqrstuvwxyz').split('')[(Math.floor(Math.random() * 26 ))];
 
 if (playerChoice === computerChoice) {
     
